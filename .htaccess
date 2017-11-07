@@ -1,0 +1,10 @@
+RewriteEngine on
+
+#RewriteRule ^article/([^/]+)/?$ index.php/page.php/page=$1 [L]
+
+Options +FollowSymlinks
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*) /page.php?%{QUERY_STRING}
+
+
