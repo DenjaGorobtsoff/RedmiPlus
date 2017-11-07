@@ -1,5 +1,5 @@
 <?php
-$connection = mysqli_connect('localhost','root','','news_redmi');
+$connection = mysqli_connect('localhost','root','','news');
 
 if ($connection == false)
 {
